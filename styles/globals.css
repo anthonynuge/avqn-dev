@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Make width and height include padding and border */
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  scroll-behavior: smooth; /* Smooth scrolling for better UX */
+  font-size: 16px; /* Set a base font size for rem calculations */
+  height: 100%;
+}
+
+body {
+  font-family: "Inter", sans-serif; /* Use the Inter font for global typography */
+  line-height: 1.6; /* Improve readability */
+  color: #333; /* Set a default text color */
+  background-color: #f9f9f9; /* Light background color for a clean look */
+  -webkit-font-smoothing: antialiased; /* Smoother rendering on MacOS */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Main container for content to take full screen */
+#__next {
+  height: 100%; /* Make the Next.js container take the full height */
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700; /* Use bold font for headings */
+  margin-bottom: 1rem; /* Add space below headings */
+  line-height: 1.2;
+  color: #222; /* Darker shade for headings to make them stand out */
+}
+
+p {
+  margin-bottom: 1.5rem; /* Add spacing below paragraphs for readability */
+  font-weight: 400;
+}
+
+a {
+  color: #0070f3; /* Blue color for links to match a modern design */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline; /* Underline links on hover for better visual feedback */
+}
+
+ul,
+ol {
+  margin-left: 2rem; /* Add left margin for better readability */
+  margin-bottom: 1.5rem; /* Add space below lists */
+}
+
+li {
+  line-height: 1.6; /* Consistent line spacing for lists */
+}
+
+/* Button Styling */
+button {
+  font-family: "Inter", sans-serif; /* Use the same font as the rest of the site */
+  padding: 0.75rem 1.5rem; /* Add padding for buttons */
+  border: none;
+  background-color: #0070f3;
+  color: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #005bb5; /* Darker shade on hover */
+}
+
+/* Images */
+img {
+  max-width: 100%; /* Ensure images are responsive */
+  height: auto; /* Keep the aspect ratio */
+  display: block;
+}
+
+/* General Spacing and Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto; /* Center the container */
+  padding: 1rem; /* Add space around the container */
+}
+
+/* Global Form Styles */
+input,
+textarea {
+  font-family: "Inter", sans-serif;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical; /* Allow vertical resizing only */
+}

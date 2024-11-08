@@ -1,0 +1,82 @@
+/* Main container for the entire page content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 1rem; /* Add some padding around the container */
+  font-family: "Inter", sans-serif; /* Apply the Inter font throughout */
+}
+
+/* Header styles */
+.header {
+  background-color: #ffffff; /* Set a white background color */
+  padding: 2rem 0; /* Top and bottom padding for space */
+  text-align: center; /* Center-align text in the header */
+  border-bottom: 1px solid #e0e0e0; /* Light border at the bottom for separation */
+}
+
+/* Navigation styles */
+.nav {
+  display: flex; /* Use flexbox to arrange navigation items */
+  justify-content: center; /* Center navigation items */
+  gap: 2rem; /* Space between navigation items */
+  margin-bottom: 1rem; /* Add space below the navigation */
+}
+
+.navItem {
+  font-weight: 600; /* Make navigation items bold */
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Set a dark gray color for links */
+}
+
+.navItem:hover {
+  color: #0070f3; /* Change color on hover for a nice effect */
+}
+
+/* Main content styles */
+.main {
+  padding: 4rem 1rem; /* Add padding to main content for better spacing */
+}
+
+/* Call-to-action button styles */
+.ctaButton {
+  display: inline-block; /* Make the button an inline block element */
+  padding: 1rem 2rem; /* Padding inside the button */
+  margin-top: 2rem; /* Add space above the button */
+  background-color: #0070f3; /* Set the button background color */
+  color: #ffffff; /* Set the button text color to white */
+  text-decoration: none; /* Remove underline from button text */
+  font-weight: 600; /* Make the button text bold */
+  border-radius: 8px; /* Round the corners of the button */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.ctaButton:hover {
+  background-color: #005bb5; /* Darken the button background on hover */
+}
+
+/* Footer styles */
+.footer {
+  background-color: #ffffff; /* Set a white background color for the footer */
+  padding: 2rem 0; /* Add padding to the top and bottom of the footer */
+  text-align: center; /* Center-align footer text */
+  font-weight: 600; /* Make footer text bold */
+  border-top: 1px solid #e0e0e0; /* Add a border at the top for separation */
+}
+
+/* Footer links for social media or other pages */
+.footerLinks {
+  display: flex; /* Use flexbox to arrange footer links */
+  justify-content: center; /* Center the footer links */
+  gap: 1.5rem; /* Space between the footer links */
+  margin-top: 1rem; /* Space above the footer links */
+}
+
+.footerLink {
+  color: #0070f3; /* Set link color to match the theme */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: 600; /* Make the link text bold */
+}
+
+.footerLink:hover {
+  text-decoration: underline; /* Add underline on hover for better UX */
+}
