@@ -54,6 +54,37 @@
     display: flex;
   }
 
+  .hamburgerToggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: 20px;
+    z-index: 1001;
+  }
+
+  .hamburgerToggle .hamBar {
+    background-color: #fff;
+    height: 3px;
+    width: 20px;
+    transition: all 200ms ease-in-out;
+  }
+
+  .xTop {
+    transition: all 200ms ease-in-out;
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  .xMid {
+    transition: all 200ms ease-in-out;
+    opacity: 0;
+  }
+
+  .xBot {
+    transition: all 200ms ease-in-out;
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+
   .hamburger {
     display: block;
     cursor: pointer;

@@ -17,8 +17,16 @@ const Navbar = () => {
       <div className={styles.logo}>
         <Link href="/">Logo</Link>
       </div>
-      <div className={styles.hamburger} onClick={toggleMenu}>
-        {isActive ? "✖" : "☰"}
+      <div className={styles.hamburgerToggle} onClick={toggleMenu}>
+        <span
+          className={`${styles.hamBar} ${isActive ? styles.xTop : ""}`}
+        ></span>
+        <span
+          className={`${styles.hamBar} ${isActive ? styles.xMid : ""}`}
+        ></span>
+        <span
+          className={`${styles.hamBar} ${isActive ? styles.xBot : ""}`}
+        ></span>
       </div>
       <ul className={styles.navLinks}>
         <li className={styles.navItem}>
