@@ -5,8 +5,23 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    /* --background: #171717;
     --foreground: #ededed;
+    --secondary-color: #474747; */
+    --background: #1e202e;
+    --foreground: #ededed;
+    --color-primary: #313342;
+    --color-secondary: #474747;
+    --color-accent: #b3b7d1;
+    --color-muted: #888991;
+
+    /* --background-color: #171717;
+    --foreground-color: #ededed;
+    --primary-color: #4b8bff;
+    --secondary-color: #b58aff;
+    --accent-color: #ffb3b5; 
+    --muted-color: #a1a1a1;  
+    --border-color: #2a2a2a;  */
   }
 }
 
@@ -19,7 +34,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -28,6 +43,15 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+button {
+  background-color: var(--color-primary);
+  color: var(--foreground);
+}
+
+button:hover {
+  background-color: var(--color-secondary);
 }
 
 a {
