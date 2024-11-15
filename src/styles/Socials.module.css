@@ -1,0 +1,17 @@
+.socialContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+}
+
+.socialIcon {
+  width: 24px;
+  height: 24px;
+  fill: var(--color-muted);
+  transition: fill 0.3s ease;
+}
+
+.socialIcon:hover {
+  fill: var(--color-accent);
+}
