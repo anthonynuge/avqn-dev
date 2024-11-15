@@ -2,43 +2,44 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 2rem 3rem;
+  transition: padding 0.5s ease;
 }
 
 .logo {
-  color: var(--color-accent);
+  color: var(--foreground);
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 /* toggle  */
 .hamburgerToggle {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 20px;
-  width: 20px;
+  justify-content: space-around;
+  height: 25px;
+  width: 25px;
   z-index: 1001;
   cursor: pointer;
+  transition: transform 0.5s ease;
 }
 
 .hamburgerToggle .hamBar {
   background-color: var(--foreground);
   height: 2px;
-  width: 20px;
-  transition: all 300ms ease-in-out;
+  width: 25px;
+  transition: all 500ms ease-in-out;
 }
 
 .xTop {
-  transition: all 300ms ease-in-out;
   transform: rotate(45deg) translate(6.5px, 6.5px);
 }
 
 .xMid {
-  transition: all 300ms ease-in-out;
   opacity: 0;
 }
 
 .xBot {
-  transition: all 300ms ease-in-out;
   transform: rotate(-45deg) translate(6.5px, -6.5px);
 }
 
@@ -50,7 +51,6 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 1000;
-  padding-left: 5rem;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
@@ -107,4 +107,26 @@
 
 .navLink:hover {
   color: #0070f3;
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+  .navbar.active {
+    padding: 2rem 10rem;
+  }
+
+  .navOverlay {
+    padding-left: 10rem;
+  }
+}
+
+/* small screens */
+@media (max-width: 767px) {
+  .navbar.active {
+    padding: 2rem 4rem;
+  }
+
+  .navOverlay {
+    padding: 2rem 4rem;
+  }
 }

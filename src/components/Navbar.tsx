@@ -21,10 +21,9 @@ const Navbar = () => {
   };
 
   return (
-    // <div>Navbar</div>
-    <nav className={styles.navbar}>
+    <nav className={`${styles.navbar} ${isOpen ? styles.active : ""}`}>
       <div className={styles.logo}>
-        <Link href="/">Logo</Link>
+        <Link href="/">AVQN-dev</Link>
       </div>
       <div className={styles.hamburgerToggle} onClick={toggleMenu}>
         <span
