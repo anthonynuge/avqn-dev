@@ -9,7 +9,6 @@ const Navbar = () => {
   const [isFadingOut, setIsFadingOut] = useState(false);
 
   const toggleMenu = () => {
-    // setIsOpen(!isOpen);
     if (isOpen) {
       setIsFadingOut(true);
       setTimeout(() => {
@@ -39,7 +38,6 @@ const Navbar = () => {
         ></span>
       </div>
       {isOpen && (
-        // <div className={styles.navOverlay}>
         <div
           className={`${styles.navOverlay} ${
             isFadingOut ? styles.fadeOut : styles.fadeIn
@@ -47,18 +45,18 @@ const Navbar = () => {
         >
           <ul className={styles.navLinks}>
             <li className={styles.navItem}>
-              <Link href="/about" className={styles.navLink}>
-                About
+              <Link href="/projects" className={styles.navLink}>
+                PROJECTS
               </Link>
             </li>
             <li className={styles.navItem}>
-              <Link href="/projects" className={styles.navLink}>
-                Projects
+              <Link href="/about" className={styles.navLink}>
+                ABOUT
               </Link>
             </li>
             <li className={styles.navItem}>
               <Link href="/contact" className={styles.navLink}>
-                Contact
+                CONTACT
               </Link>
             </li>
           </ul>

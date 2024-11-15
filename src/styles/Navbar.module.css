@@ -24,21 +24,21 @@
   background-color: var(--foreground);
   height: 2px;
   width: 20px;
-  transition: all 200ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .xTop {
-  transition: all 200ms ease-in-out;
+  transition: all 300ms ease-in-out;
   transform: rotate(45deg) translate(6.5px, 6.5px);
 }
 
 .xMid {
-  transition: all 200ms ease-in-out;
+  transition: all 300ms ease-in-out;
   opacity: 0;
 }
 
 .xBot {
-  transition: all 200ms ease-in-out;
+  transition: all 300ms ease-in-out;
   transform: rotate(-45deg) translate(6.5px, -6.5px);
 }
 
@@ -93,11 +93,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .navItem {
-  font-weight: 600;
+  font-weight: 1000;
 }
 
 .navLink {
@@ -108,75 +108,3 @@
 .navLink:hover {
   color: #0070f3;
 }
-
-/* Resonsive Styles */
-/* @media (max-width: 768px) {
-  .navbar {
-    flex-direction: row;
-    align-items: center;
-    position: relative;
-  }
-
-  .navLinks {
-    display: none;
-    flex-direction: column;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(51, 51, 51, 0.9);
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-
-  .navbar.active .navLinks {
-    display: flex;
-  }
-
-  .hamburgerToggle {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 20px;
-    width: 20px;
-    z-index: 1001;
-  }
-
-  .hamburgerToggle .hamBar {
-    background-color: #fff;
-    height: 3px;
-    width: 20px;
-    transition: all 200ms ease-in-out;
-  }
-
-  .xTop {
-    transition: all 200ms ease-in-out;
-    transform: rotate(45deg) translate(6px, 6px);
-  }
-
-  .xMid {
-    transition: all 200ms ease-in-out;
-    opacity: 0;
-  }
-
-  .xBot {
-    transition: all 200ms ease-in-out;
-    transform: rotate(-45deg) translate(6px, -6px);
-  }
-
-  .hamburger {
-    display: block;
-    cursor: pointer;
-    font-size: 1.5rem;
-    z-index: 1001;
-    transition: transform 0.3s ease;
-  }
-}
-
-@media (min-width: 769px) {
-  .hamburger {
-    display: none;
-  }
-} */
