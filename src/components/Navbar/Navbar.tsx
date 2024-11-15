@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import React, { useState } from "react";
-import styles from "@styles/Navbar.module.css";
+import styles from "./Navbar.module.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
