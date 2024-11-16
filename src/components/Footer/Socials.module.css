@@ -1,7 +1,8 @@
 .socialContainer {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  /* justify-content: space-evenly; */
+  align-items: flex-start;
+  width: 100%;
   gap: 2rem;
 }
 
