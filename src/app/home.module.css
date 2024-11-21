@@ -44,6 +44,10 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
+
+  .header {
+    width: fit-content;
+  }
 }
 
 @media (max-width: 750px) {
