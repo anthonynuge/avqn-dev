@@ -11,6 +11,8 @@
     --background: #1e202e;
     --foreground: #ededed;
     --color-primary: #313342;
+    --background-2: #0a0b0f;
+    /* --background-2: #14151f; */
     --color-secondary: #474747;
     /* --color-accent: #b3b7d1; */
     --color-accent: #ffb3b5;
@@ -31,7 +33,6 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   height: 100%;
-  overflow: hidden;
 }
 
 body {
