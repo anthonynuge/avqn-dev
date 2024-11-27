@@ -32,7 +32,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <div className={styles.cardContent}>
         <h3 className={styles.title}>{title}</h3>
         <p>{description}</p>
-        <div className={styles.tagContainter}>
+        <div className={styles.tagContainer}>
           {tags.map((tag, index) => (
             <span key={index} className={styles.tag}>
               {tag}
