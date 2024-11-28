@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import styles from "./projects.module.css";
 import { projects } from "@data/projectsData";
